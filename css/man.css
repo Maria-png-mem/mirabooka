@@ -3,9 +3,18 @@
 	font-family: 'Montserrat';
 }
 
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+
 body{
 	font-family: 'Montserrat';
-	color: white;
+	background-color: white;
+	margin: 0;
+	color:white;
 }
 
 .flex_row{
@@ -79,3 +88,51 @@ nav{
     margin: 0 auto;
 }
 
+.ss{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 220px;
+	margin-bottom: 130px;
+	height: auto;
+}
+/* слайдер */
+.slider img{
+	
+	max-width: 800px;
+	width: 100%;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.slick-list{
+    /* padding:0 10% 0 10%; */
+}
+/* .slick-slide img:hover {
+	transition: transform .5s; 
+	transform: scale(1.5);   
+  } */
+  .slider div {padding-bottom: 0;
+height: 900px;}
+
+  .pop{
+	height: 700px;
+	display: flex;
+  }
+  
+  /* .slick-center img {
+	transition: linear .1s  ;
+	transform: translateY(20px);
+	
+	
+  }  */
+  .slick-slide img:{
+	transition: all 500ms cubic-bezier(1.000, 0.255, 0.295, 1.650);  }
+  .slick-slide img:hover {
+	transition: all 500ms cubic-bezier(1.000, 0.255, 0.295, 1.650);transform: translateY(20px);
+	width: 850px;
+
+	/* transform: scale(1.1); */
+	}
+	.slick-prev ,.slick-arrow{
+		background-color: black;
+		color: black;
+	}
